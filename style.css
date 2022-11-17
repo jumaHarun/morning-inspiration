@@ -1,0 +1,90 @@
+:root {
+  --clr-white: hsl(0, 6%, 87%);
+  --clr-dark: hsla(0, 0%, 5%, 0.7);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+.block {
+  display: block;
+}
+
+/* Layout */
+main {
+  height: 100vh;
+  max-width: 100%;
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.quote-wrapper {
+  max-width: 27.25rem;
+  background-color: var(--clr-white);
+  padding: 1.75em .8rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 0 0 2px #000;
+  padding: 1.2rem;
+}
+
+.quote {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: .3em;
+}
+
+.author {
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.hotlink {
+  font-family: "Inter", sans-serif;
+  font-size: .7rem;
+  background: var(--clr-white);
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.hotlink a {
+  color: var(--clr-dark);
+}
+
+.hotlink a:hover,
+.hotlink a:focus {
+  color: royalblue;
+  cursor: pointer;
+}
+
+
+.hotlink a:visited {
+  color: blue;
+}
