@@ -3,7 +3,7 @@ import { quotesArr } from "./quotes.js";
 document.getElementById("container").innerHTML = getQuoteHtml(quotesArr);
 
 fetch(
-  "https://api.unsplash.com/photos/random?client_id=sWl4MVt742YicJXfK78JcwxJdzz8RpUj_m8v8q9z9uM&orientation=landscape&query=nature"
+  "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature"
 )
   .then((res) => res.json())
   .then((data) => {
@@ -18,6 +18,8 @@ fetch(
     `;
   })
   .catch(err => console.log(err))
+
+  // https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature
 
 function getQuoteHtml(arr) {
   let index = roll(0, arr.length);
